@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:loginview"
+             x:Class="loginview.MainPage">
+
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <OnPlatform.Android>10,20,10,20</OnPlatform.Android>
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <StackLayout>
+        <Label Text="Login" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"></Label>
+        <Label Text="User Name"></Label>
+        <Entry x:Name="userName"></Entry>
+        <Label Text="Password"></Label>
+        <Entry x:Name="password" IsPassword="True"></Entry>
+        <Button Text="Login!" Clicked="OnButtonClick"></Button>
+        <Label x:Name="message"/>
+    </StackLayout>
+</ContentPage>
